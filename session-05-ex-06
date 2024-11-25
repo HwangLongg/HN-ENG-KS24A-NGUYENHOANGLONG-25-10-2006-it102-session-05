@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main (){
+    int a , b ,c , d ;
+     while (c != 5 ) {
+    printf (" nhap vao 2 so bat ky ");
+    scanf ("%d",&a);
+    scanf ("%d",&b);
+    printf (" CALCULATOR \n \n \n");
+    printf ("1. Tổng 2 số \n");
+    printf ("2. Hiệu 2 số \n");
+    printf ("3. Tích 2 số \n");
+    printf ("4. Thương 2 số \n");
+    printf ("5. Thoát ");
+    do {
+        scanf ("%d",&c);
+        if (c == 1){
+            d = a + b ;
+            printf ("%d + %d = %d ",a ,b ,d );
+        } 
+        else if (c == 2){
+            d = a - b ;
+            printf ("%d - %d = %d ",a ,b ,d );
+        }
+        else if (c == 3){
+            d = a * b ;
+            printf ("%d * %d = %d ",a ,b ,d );
+        }
+        else if (c == 4){
+            d = a / b ;
+            printf ("%d / %d = %d ",a ,b ,d );
+        }
+        else if (c == 5){
+           break ;
+        }
+    } while ( c != 5); }
+    return 0 ;
+
+}
